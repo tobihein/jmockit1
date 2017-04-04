@@ -134,8 +134,9 @@
 					</goals>
 					<configuration>
 						<instructions>
-							<DynamicImport-Package>*</DynamicImport-Package>
+							<Export-Package>!.,mockit.internal.expectations.transformation,!*internal*,!*impl*,*</Export-Package>
 							<Import-Package>*,org.junit.runner;resolution:=optional</Import-Package>
+							<DynamicImport-Package>*</DynamicImport-Package>
 						</instructions>
 					</configuration>
 				</execution>
